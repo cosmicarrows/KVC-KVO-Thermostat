@@ -10,7 +10,7 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
     
-    @objc var temperature = 75
+    @objc dynamic var temperature = 75
     
     
     
@@ -23,6 +23,18 @@ class MainWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        
     }
     
+    @IBAction func makeWarmer(sender: NSButton) {
+        //let newTemperature = temperature + 1
+        //setValue(newTemperature, forKey: "temperature")
+        temperature += 1
+    }
+    
+    @IBAction func makerCooler(sender: NSButton) {
+        //let newTemperature = temperature - 1
+        //setValue(newTemperature, forKey: "temperature")
+        temperature += 1
+    }
 }
