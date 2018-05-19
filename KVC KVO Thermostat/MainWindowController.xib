@@ -25,6 +25,9 @@
                         <rect key="frame" x="18" y="17" width="19" height="361"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="ice-J3-ihd"/>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="temperature" id="wbc-kF-N5L"/>
+                        </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="218-dX-cI7">
                         <rect key="frame" x="41" y="189" width="37" height="17"/>
@@ -34,6 +37,9 @@
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="temperature" id="pK1-Tn-4gM"/>
+                        </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-d9-J8X">
                         <rect key="frame" x="125" y="250" width="59" height="19"/>

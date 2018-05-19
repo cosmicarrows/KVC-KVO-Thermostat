@@ -10,7 +10,7 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
     
-    var temperature = 75
+    @objc var temperature = 75
     
     
     
